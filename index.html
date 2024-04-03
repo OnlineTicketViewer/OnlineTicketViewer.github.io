@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mainaqila Ticketing</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+  <div id="slider" ontouchstart="startTouch(event)" ontouchmove="moveTouch(event)" ontouchend="endTouch()">
+    <div class="box outer"><img class="card" src="img/ohnetextkarte.png"></div>
+    <div class="box" id="init">
+      <img class="card" src="img/ohnetextkarte.png">
+      <img class="infoicon" src="img/iconinfo.png" onclick="iclicked(this)">
+      <video autoplay loop muted playsinline class="balkenvideo">
+        <source src="img/RPReplay_Final1711957605.mp4" type="video/mp4">
+      </video>
+      <p class="gamename">Eintracht Frankfurt vs. GEGNER</p>
+      <p class="blocknumber">47</p>
+      <p class="tribune">Oberrang Nordwestkurve</p>
+      <p class="date">1.1.2024, 11:11 Uhr</p>
+      <p class="rang">O</p>
+    </div>
+    <div class="box outer" id="last"><img class="card" src="img/ohnetextkarte.png"></div>
+  </div>
+</div>
+
+<img id="arrow"  src="img/iconarrow.png">
+<img id="bars" onclick="barsclicked()" src="img/iconbars.png">
+<img id="bigpullup" src="img/bigpullup.png">
+<img id="pullup" src="img/pullup.png">
+<img id="dots"  onclick="dotsclicked()" src="img/icondots.png">
+<img id="cross" src="img/iconcross.png" onclick="barsclicked()">
+</body>
+<script src="js/app.js">
+
+</script>
+</html>
