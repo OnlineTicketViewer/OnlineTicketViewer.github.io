@@ -47,7 +47,7 @@ for(var i=0; i<blockInfos.length;i++){
 }
 
 if(!ticketCount>0){
-  ticketCount = 1;
+  ticketCount = 5;
 }
 calcProcent = 100 / (ticketCount + 2);
 
