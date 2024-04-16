@@ -144,3 +144,8 @@ body, html {
   width: 0;
   z-index: 0;
 }
+#disclaimer{
+  position: fixed;
+  bottom: -30%;
+  z-index: -10;
+}
