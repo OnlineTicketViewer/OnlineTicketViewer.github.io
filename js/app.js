@@ -1,9 +1,7 @@
-console.log('start')
-
 let slideIndex = 0;
 let startX = 0;
 let endX = 0;
-document.getElementById("block").value = 42
+document.getElementById("block").value = 43
 document.getElementById("spieltag").value = '2024-10-10T17:00'
 document.getElementById("anzahl").value = 2
 
