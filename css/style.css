@@ -6,6 +6,9 @@ body, html {
   font-family: Roboto;
   overflow: hidden;
   overscroll-behavior: none;
+
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 #destroy {
