@@ -3,13 +3,26 @@ body, html {
   margin: 0;
   background: black;
   color: white;
-  font-family: Roboto;
+  font-family: 'Roboto';
+  overflow: hidden;
+  overscroll-behavior: none;
 }
+input {
+  font-size: 50px;
+}
+#destroy p {
+  font-size: 50px;
+}
+#destroy label {
+  font-size: 50px;
+}
+input[type=checkbox] {width:100px; height:100px;}
 .container {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
+  top: 120px;
 }
 .box {
   width: 25%; /* Ändere die Breite auf 25% für vier Bilder */
@@ -19,7 +32,7 @@ body, html {
 }
 .card{
   height: 125rem;
-  width: 60rem;
+  width: 55rem;
   position: absolute;
   z-index: -1;
   transition: 5s;
@@ -39,50 +52,60 @@ body, html {
   filter: brightness(0%);
 }
 .balkenvideo{
-  width: 89.7%;
-  margin-left: 3.5%;
-  margin-top: 10.8%;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+.balkenhintergrund{
+  position: absolute;
+  width: 89.34%;
+  left: 4.03%;
+  top: 22.5%;
+  z-index: 99999999999;
 }
 .gamename{
-  margin-left: 7.5%;
-  margin-top: 6%;
-  font-size: 300%;
+  position: absolute;
+  left: 55px;
+  top: 510px;
+  font-size: 46px;
   font-weight: bold;
-  letter-spacing: 0.85px;
-  width: 80%;
   min-height: 5.5%;
+  letter-spacing: 2px;
+  margin-right: 50px;
 }
 .blocknumber{
-  margin-top: 10%;
-  margin-left: 7.7%;
-  letter-spacing: 0px;
+  position: absolute;
+  left: 55px;
+  top: 690px;
+  letter-spacing: -1px;
+  font-size: 68px;
   font-weight: bold;
-  font-size: 370%;
+  min-height: 5.5%;
 }
 .tribune{
-  margin-top: -2.4%;
-  margin-left: 7.7%;
-  letter-spacing: 0px;
-  font-weight: 400;
-  font-size: 275%;
+  position: absolute;
+  left: 55px;
+  top: 825px;
+  font-size: 42px;
+  font-weight: bold;
+  min-height: 5.5%;
 }
 .date{
-  letter-spacing: 0;
-  font-size: 260%;
-  margin-left: 7.5%;
-  margin-top: 7%;
+  position: absolute;
+  left: 55px;
+  top: 960px;
+  font-size: 42px;
+  min-height: 5.5%;
 }
 .rang{
-  font-weight: 500;
-  font-size: 850%;
-  margin-top: 28.5%;
-  margin-left: 19%;
+  position: absolute;
+  left: 121px;
+  top: 1323px;
+  font-size: 150px;
+  font-weight: bold;
+  min-height: 5.5%;
 
-  -webkit-transform:scale(1.12,1); /* Safari and Chrome */
-  -moz-transform:scale(1.12,1); /* Firefox */
-  -ms-transform:scale(1.12,1); /* IE 9 */
-  -o-transform:scale(1.12,1); /* Opera */
-  transform:scale(1.12,1); /* W3C */
 }
 #bars{
   position: absolute;
@@ -90,6 +113,7 @@ body, html {
   bottom: 20px;
   width: 7rem;
   height: 7rem;
+  z-index: 20;
 }
 #dots{
   position: absolute;
@@ -97,6 +121,7 @@ body, html {
   right: 40px;
   width: 1.25rem;
   height: 3rem;
+  z-index: 1000;
 }
 #arrow{
   position: absolute;
@@ -110,12 +135,14 @@ body, html {
   position: absolute;
   bottom: 0;
   width: 100%;
+  z-index: 100;
 }
 #bigpullup{
   transition: 0.2s;
   position: absolute;
   bottom: 0;
   width: 100%;
+  z-index: 9;
 }
 #cross{
 
@@ -126,9 +153,10 @@ body, html {
   width: 6%;
 }
 .infoicon{
-  height: 3.2%;
-  margin-top: 27.5%;
-  margin-left: 82.5%;
+  position: absolute;
+  height: 56px;
+  left: 862px;
+  top: 64px;
   z-index: 100;
 }
 #iid{
@@ -142,10 +170,23 @@ body, html {
   position: absolute;
   bottom: 0;
   width: 0;
-  z-index: 0;
+  z-index: 10;
 }
-#disclaimer{
-  position: fixed;
-  bottom: -30%;
-  z-index: -10;
+#whiteline{
+  position: absolute;
+  top: 96%;
+  height: 10px;
+  width: 86.5%;
+  left: 5.5%;
+  background: white;
+}
+#redline{
+  transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+  position: absolute;
+  top: 96%;
+  height: 10px;
+  width: 87%;
+  left: 5.5%;
+  background: red;
+  z-index: 1;
 }
