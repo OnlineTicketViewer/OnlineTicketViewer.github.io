@@ -1,7 +1,7 @@
 let slideIndex = 0;
 let startX = 0;
 let endX = 0;
-document.getElementById("block").value = 43
+document.getElementById("block").value = 42
 document.getElementById("spieltag").value = '2024-10-10T17:00'
 document.getElementById("anzahl").value = 2
 
@@ -259,7 +259,8 @@ function iclicked(button){
 
 
 
-function start(){
+function start(frontlinkString){
+  frontLink = frontlinkString;
   var blockEl = document.getElementById("block")
   var spieltagEl = document.getElementById("spieltag")
   var anzahlEl = document.getElementById("anzahl")
@@ -282,13 +283,6 @@ function start(){
   // Format the date and time
   dateFormatted = `${day}.${month}.${year}, ${hours}:${minutes} Uhr`;
 
-  console.log(document.getElementById('el').checked)
-  if(document.getElementById('el').checked){
-    frontLink = "img/ohnetextel.mp4"
-  }
-  else {
-    frontLink = "img/ohnetextbuli.mp4"
-  }
   console.log(frontLink)
   document.getElementsByClassName('balkenvideo')[0].src = frontLink;
   document.getElementsByClassName('balkenvideo')[0].load()
@@ -301,4 +295,7 @@ function start(){
 
 function onElChange(){
   getGameInfo(queryStringEl)
+}
+function onBlChange(){
+  getGameInfo(queryStringBl)
 }

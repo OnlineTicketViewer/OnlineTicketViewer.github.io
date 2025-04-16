@@ -9,21 +9,21 @@
 </head>
 <body>
 <div id="destroy">
-  <p>Anzahl an Tickets:</p>
+<br>
+    <button class="prefill" onclick="onElChange()">Europa-League vorausfüllen</button>
+    <button class="prefill"  onclick="onBlChange()">Bundesliga vorausfüllen</button>
+    <br>
+  <p>Anzahl an Tickets</p>
   <label for="anzahl"></label><input id="anzahl"  type="number">
-  <p>Blocknummer:</p>
+  <p>Blocknummer</p>
   <label for="block"></label><input id="block" type="number">
-  <p>Datum:</p>
+  <p>Datum</p>
   <label for="spieltag"></label><input id="spieltag" type="datetime-local">
-  <p>Gegnername:</p>
+  <p>Gegnername</p>
   <label for="name"></label><input id="name" type="text">
   <br>
-  <input id="el" type="checkbox" style="width: 40px" name="el">
-  <label for="el">Europa-League?</label><br>
-  <button onclick="start()" style="width: 100px;height: 60px;font-size: 30px">
-  go
-  </button>
-<button onclick="onElChange()" style="width: 300px;height: 100px;font-size: 30px">Europa-League vorausfüllen</button>
+  <button class="nonprefill" onclick="start('img/ohnetextel.mp4')">Europa-League Ticket</button>
+    <button class="nonprefill" onclick="start('img/ohnetextbuli.mp4')">Bundesliga Ticket</button>
 </div>
 <div class="container">
   <div id="slider" ontouchstart="startTouch(event)" ontouchmove="moveTouch(event)" ontouchend="endTouch()">
@@ -34,10 +34,10 @@
       </video>
       <img class="infoicon" src="img/iconinfo.png" onclick="iclicked(this)">
       <p class="gamename">Eintracht Frankfurt vs. FC Viktoria Plzeň</p>
-      <p class="blocknumber">43</p>
-      <p class="tribune">Oberrang Nordwestkurve</p>
+      <p class="blocknumber">42</p>
+      <p class="tribune">Unterrang Nordwestkurve</p>
       <p class="date">5.4.2024, 20:30 Uhr</p>
-      <p class="rang">O</p>
+      <p class="rang">U</p>
     </div>
     <div class="box outer" id="last"><img class="card" src="img/ohnetextkarte.png"></div>
   </div>

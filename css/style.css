@@ -3,20 +3,64 @@ body, html {
   margin: 0;
   background: black;
   color: white;
-  font-family: 'Roboto';
+  font-family: Roboto;
   overflow: hidden;
   overscroll-behavior: none;
 }
-input {
+
+#destroy {
+  background: #a82323;
+  background: linear-gradient(0deg,rgba(168, 35, 35, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  height: 100%;
   font-size: 50px;
+  z-index: 100;
 }
+
 #destroy p {
-  font-size: 50px;
+  margin: 0;
+  font-weight: 600;
+  color: #333;
 }
-#destroy label {
+
+input {
+  width: 80%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  transition: border-color 0.3s;
   font-size: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
-input[type=checkbox] {width:100px; height:100px;}
+
+
+#destroy button {
+  cursor: pointer;
+  border: solid 5px #151515;
+  border-radius: 18px;
+  font-weight: bold;
+  width: 80%;
+  height: 5%;
+  font-size: 50px;
+  transition: background-color 0.3s;
+}
+
+.prefill{
+  color: #606060;
+  border: solid 2px #151515;
+}
+.nonprefill{
+  color: white;
+  background-color: #151515;
+}
 .container {
   width: 100%;
   height: 100%;
@@ -29,12 +73,13 @@ input[type=checkbox] {width:100px; height:100px;}
   float: left;
   height: 100%;
   position: relative;
+  z-index: 0;
 }
 .card{
   height: 125rem;
   width: 55rem;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   transition: 5s;
 }
 
@@ -55,14 +100,14 @@ input[type=checkbox] {width:100px; height:100px;}
   position: absolute;
   width: 100%;
   left: 0;
-  z-index: -1;
+  z-index: -201;
 }
 .balkenhintergrund{
   position: absolute;
   width: 89.34%;
   left: 4.03%;
   top: 22.5%;
-  z-index: 99999999999;
+  z-index: -101;
 }
 .gamename{
   position: absolute;
@@ -113,7 +158,7 @@ input[type=checkbox] {width:100px; height:100px;}
   bottom: 20px;
   width: 7rem;
   height: 7rem;
-  z-index: 20;
+  z-index: 2;
 }
 #dots{
   position: absolute;
@@ -121,7 +166,7 @@ input[type=checkbox] {width:100px; height:100px;}
   right: 40px;
   width: 1.25rem;
   height: 3rem;
-  z-index: 1000;
+  z-index: 3;
 }
 #arrow{
   position: absolute;
@@ -129,20 +174,21 @@ input[type=checkbox] {width:100px; height:100px;}
   height: 4rem;
   left: 20px;
   top: 80px;
+  z-index: 3;
 }
 #pullup{
   transition: 0.2s;
   position: absolute;
   bottom: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 3;
 }
 #bigpullup{
   transition: 0.2s;
   position: absolute;
   bottom: 0;
   width: 100%;
-  z-index: 9;
+  z-index: 3;
 }
 #cross{
 
@@ -151,26 +197,27 @@ input[type=checkbox] {width:100px; height:100px;}
   bottom: 4.5%;
   right: 9%;
   width: 6%;
+  z-index: 4;
 }
 .infoicon{
   position: absolute;
   height: 56px;
   left: 862px;
   top: 64px;
-  z-index: 100;
+  z-index: 3;
 }
 #iid{
   position: absolute;
   height: 3%;
   right: 10%;
   top: 9.7%;
-  z-index: 100;
+  z-index: 3;
 }
 #infos{
   position: absolute;
   bottom: 0;
   width: 0;
-  z-index: 10;
+  z-index: 3;
 }
 #whiteline{
   position: absolute;
@@ -189,4 +236,7 @@ input[type=checkbox] {width:100px; height:100px;}
   left: 5.5%;
   background: red;
   z-index: 1;
+}
+#spieltag{
+  font-family: Roboto;
 }
