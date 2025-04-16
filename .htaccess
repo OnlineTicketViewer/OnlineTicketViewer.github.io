@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Geschützter Bereich"
+AuthUserFile /absoluter/pfad/zur/.htpasswd
+Require valid-user
