@@ -12,8 +12,7 @@ body, html {
 }
 
 #destroy {
-  background: #a82323;
-  background: linear-gradient(0deg,rgba(168, 35, 35, 1) 0%, rgba(255, 255, 255, 1) 100%);
+  background: #ffffff;
   padding-top: 2rem;
   padding-bottom: 2rem;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -42,6 +41,8 @@ input {
   font-size: 50px;
   margin-left: 5%;
   margin-right: 5%;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 
@@ -242,4 +243,6 @@ input {
 }
 #spieltag{
   font-family: Roboto;
+  -webkit-appearance: none;
+  appearance: none;
 }
