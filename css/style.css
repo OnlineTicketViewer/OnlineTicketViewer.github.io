@@ -10,10 +10,6 @@ body, html {
   -webkit-appearance: none;
   appearance: none;
 }
-body {
-  padding-top: env(safe-area-inset-top);
-  padding-bottom: env(safe-area-inset-bottom);
-}
 #destroy {
   background: #ffffff;
   padding-top: 2rem;
