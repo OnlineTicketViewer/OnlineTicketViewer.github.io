@@ -158,9 +158,9 @@ input {
 #bars{
   position: absolute;
   right: 50px;
-  top: 84.5%;
-  width: 8rem;
-  height: 8rem;
+  top: 89.5%;
+  width: 9rem;
+  height: 9rem;
   z-index: 2;
 }
 #dots{
@@ -224,19 +224,19 @@ input {
 }
 #whiteline{
   position: absolute;
-  top: 86%;
+  top: 91%;
   height: 10px;
-  width: 86.5%;
-  left: 5.5%;
+  width: 95%;
+  left: 1.8%;
   background: white;
 }
 #redline{
   transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   position: absolute;
-  top: 86%;
+  top: 91%;
   height: 10px;
-  width: 87%;
-  left: 5.5%;
+  width: 95%;
+  left: 1.8%;
   background: red;
   z-index: 1;
 }

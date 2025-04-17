@@ -83,7 +83,7 @@ function load(rang, dateFormatted, enemy){
       dates[i].innerHTML = dateFormatted;
     }
   }
-  document.getElementById('redline').style.width = 87 / ticketCount + '%';
+  document.getElementById('redline').style.width = 95 / ticketCount + '%';
 
   if(!rang){
     rang = 43;
